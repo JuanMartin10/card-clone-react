@@ -1,6 +1,7 @@
 import React from 'react';
-import Button from '../UI/Button/Button';
-import ToogleButton from '../UI/ToogleButton/ToogleButton';
+import Button from '../../UI/Button/Button';
+import ToogleButton from '../../UI/ToogleButton/ToogleButton';
+import ProfileInfo from '../ProfileInfo/ProfileInfo';
 import './Card.css';
 
 const Card = () => {
@@ -17,7 +18,7 @@ const Card = () => {
             </div>
             <div className='main'>
                 <div className='div-left'>
-                    <h5>Profile</h5>
+                    <ProfileInfo />
                 </div>
                 <div className='div-right'>
                     <Button>

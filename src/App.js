@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+import Card from './components/containers/Card/Card';
+
 import './App.css';
-import Card from './components/containers/Card';
 
 function App() {
     return (

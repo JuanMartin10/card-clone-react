@@ -11,11 +11,11 @@
     width: 655px;
     height: 625px;
     background-color: #fff;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 1em;
+    box-shadow: 0px 0px 20px 20px rgb(245, 246, 251);
 }
 .title-container {
     display: flex;
@@ -24,6 +24,9 @@
 }
 .title-container > .title > p {
     text-transform: uppercase;
+    color: rgb(135, 152, 174);
+    font-weight: 500;
+    line-height: normal;
 }
 .main {
     display: flex;
@@ -34,9 +37,10 @@
 .main > .div-left {
     display: flex;
     border: 1px solid blue;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 42%;
+    padding: 1em 1em;
 }
 .main > .div-right {
     display: flex;

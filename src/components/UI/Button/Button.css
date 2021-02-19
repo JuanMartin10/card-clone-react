@@ -1,0 +1,29 @@
+.button {
+    width: 45%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(231, 236, 255);
+    border-radius: 5px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(231, 236, 255);
+}
+.button:nth-child(2) {
+    background-color: rgb(46, 91, 255);
+}
+.button:nth-child(2):hover {
+    background-color: rgb(231, 236, 255);
+}
+
+.button > img {
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+.button:nth-child(1) > img {
+    width: 60%;
+}

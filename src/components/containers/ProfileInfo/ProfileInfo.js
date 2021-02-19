@@ -1,19 +1,13 @@
 import React from 'react';
 import './ProfileInfo.css';
 
-const ProfileInfo = () => {
-    const profile = [
-        { name: 'Nora M. Buchanan', interactions: '4 interactions' },
-    ];
-    const profileDetails = [
-        { title: 'email', data: 'invision@invisionapp.com' },
-        { title: 'phone', data: '+144-3412-4422' },
-        { title: 'location', data: 'New York, NY' },
-    ];
+const ProfileInfo = ({ data }) => {
+    const { profile, profileDetails, image } = data;
+
     return (
         <div>
             <div className='avatar'>
-                <img src='https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' />
+                <img src={image} alt={profile[0].name} />
                 {profile.map(elm => {
                     return (
                         <div className='avatar-details'>

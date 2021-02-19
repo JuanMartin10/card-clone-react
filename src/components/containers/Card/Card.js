@@ -3,8 +3,9 @@ import Button from '../../UI/Button/Button';
 import ToogleButton from '../../UI/ToogleButton/ToogleButton';
 import ProfileInfo from '../ProfileInfo/ProfileInfo';
 import './Card.css';
+import { buttons } from '../../../data';
 
-const Card = () => {
+const Card = ({ data }) => {
     return (
         <div className='card'>
             <div className='title-container'>
@@ -18,21 +19,16 @@ const Card = () => {
             </div>
             <div className='main'>
                 <div className='div-left'>
-                    <ProfileInfo />
+                    <ProfileInfo data={data} />
                 </div>
                 <div className='div-right'>
-                    <Button>
-                        <img src='http://www.pngall.com/wp-content/uploads/2016/03/Paypal-Black-Logo-PNG.png' />
-                    </Button>
-                    <Button>
-                        <img src='https://logodix.com/logo/1153467.png' />
-                    </Button>
-                    <Button>
-                        <img src='https://www.pikpng.com/pngl/b/208-2087508_mastercard-logo-png-mastercard-logo-black-transparent-clipart.png' />
-                    </Button>
-                    <Button>
-                        <img src='https://www.pikpng.com/pngl/b/359-3596858_free-png-apple-pay-logo-png-png-images.png' />
-                    </Button>
+                    {buttons.map(btn => {
+                        return (
+                            <Button>
+                                <img src={btn.src} alt={btn.alt} />
+                            </Button>
+                        );
+                    })}
                 </div>
             </div>
             <div className='location'>

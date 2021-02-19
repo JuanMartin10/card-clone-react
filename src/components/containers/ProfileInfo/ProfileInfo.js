@@ -1,9 +1,10 @@
 import React from 'react';
+
 import './ProfileInfo.css';
 
 const ProfileInfo = ({ data, hideInfo }) => {
     const { profile, profileDetails, image } = data;
-    console.log(hideInfo);
+
     return (
         <div>
             <div className='avatar'>

@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
+
+import ProfileInfo from '../ProfileInfo/ProfileInfo';
+import LocationInfo from '../LocationInfo/LocationInfo';
+
 import Button from '../../UI/Button/Button';
 import ToogleButton from '../../UI/ToogleButton/ToogleButton';
-import ProfileInfo from '../ProfileInfo/ProfileInfo';
-import './Card.css';
+
 import { buttons } from '../../../data';
 
-const Card = ({ data, hidden }) => {
+import './Card.css';
+
+const Card = ({ data }) => {
     const [hideInfo, setHideInfo] = useState(false);
 
     const hideInfoFunction = () => setHideInfo(!hideInfo);
@@ -36,7 +41,7 @@ const Card = ({ data, hidden }) => {
                 </div>
             </div>
             <div className='location'>
-                <h1>location</h1>
+                <LocationInfo data={data} hideInfo={hideInfo} />
             </div>
         </div>
     );

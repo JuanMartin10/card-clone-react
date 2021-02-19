@@ -33,12 +33,10 @@
 .main {
     display: flex;
     justify-content: space-around;
-    border: 1px solid red;
     height: 50%;
 }
 .main > .div-left {
     display: flex;
-    border: 1px solid blue;
     justify-content: flex-start;
     align-items: flex-start;
     width: 42%;
@@ -46,7 +44,6 @@
 }
 .main > .div-right {
     display: flex;
-    border: 1px solid yellow;
     justify-content: space-evenly;
     align-items: flex-start;
     width: 58%;
@@ -59,13 +56,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid green;
     height: 50%;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
 }
 
 @media (max-width: 700px) {
     .card {
+        display: block;
         width: 100vw;
+        height: 100%;
+        margin-top: 3em;
+    }
+    .toogle > p {
+        margin: 0.5em;
     }
     .main {
         flex-direction: column;
@@ -81,5 +86,8 @@
         justify-content: center;
         align-items: center;
         margin: 0.25em 0;
+    }
+    .location {
+        height: 400px;
     }
 }

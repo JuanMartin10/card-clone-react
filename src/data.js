@@ -1,20 +1,4 @@
 export const data = {
-    hidden: {
-        profile: [
-            {
-                name: 'Your name here',
-                interactions: 'Your interactions',
-            },
-        ],
-        image:
-            'https://img2.freepng.es/20180623/iqh/kisspng-computer-icons-avatar-social-media-blog-font-aweso-avatar-icon-5b2e99c40ce333.6524068515297806760528.jpg',
-
-        profileDetails: [
-            { title: 'email', data: '*********' },
-            { title: 'phone', data: '+***-****-****' },
-            { title: 'location', data: '******, **' },
-        ],
-    },
     nora: {
         profile: [
             {
@@ -29,6 +13,38 @@ export const data = {
             { title: 'email', data: 'invision@invisionapp.com' },
             { title: 'phone', data: '+144-3412-4422' },
             { title: 'location', data: 'New York, NY' },
+        ],
+        streetInfo: [
+            {
+                icon:
+                    'https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes-3/3/36-512.png',
+                city: 'Jackson Heights',
+                street: '37-27 74th Street',
+            },
+            {
+                icon:
+                    'https://www.pngfind.com/pngs/m/122-1227257_location-icon-png-green-home-shanti-bangalore-counseling.png',
+                city: 'Greenpoint',
+                street: '81 Gate St Brooklyn',
+            },
+        ],
+        locationInfo: [
+            {
+                title: 'Distance',
+                data: '12.3 km',
+            },
+            {
+                title: 'Time',
+                data: '42 min',
+            },
+            {
+                title: 'Price',
+                data: '$34.20',
+            },
+            {
+                title: 'Energy',
+                data: '12.4 kWh',
+            },
         ],
     },
     john: {
@@ -46,6 +62,38 @@ export const data = {
             { title: 'phone', data: '+123-1299-1163' },
             { title: 'location', data: 'Washington, WA' },
         ],
+        streetInfo: [
+            {
+                icon:
+                    'https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes-3/3/36-512.png',
+                city: 'Washington',
+                street: '14000 St NEW',
+            },
+            {
+                icon:
+                    'https://www.pngfind.com/pngs/m/122-1227257_location-icon-png-green-home-shanti-bangalore-counseling.png',
+                city: 'Washington',
+                street: '1309 5th St NE ',
+            },
+        ],
+        locationInfo: [
+            {
+                title: 'Distance',
+                data: '25.1 km',
+            },
+            {
+                title: 'Time',
+                data: '59 min',
+            },
+            {
+                title: 'Price',
+                data: '$36.20',
+            },
+            {
+                title: 'Energy',
+                data: '20.4 kWh',
+            },
+        ],
     },
     michael: {
         profile: [
@@ -61,6 +109,38 @@ export const data = {
             { title: 'email', data: 'michael@invisionapp.com' },
             { title: 'phone', data: '+134-5219-5168' },
             { title: 'location', data: 'Los Angeles, LA' },
+        ],
+        streetInfo: [
+            {
+                icon:
+                    'https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes-3/3/36-512.png',
+                city: 'New York',
+                street: '201 Sussex Ave, Newark',
+            },
+            {
+                icon:
+                    'https://www.pngfind.com/pngs/m/122-1227257_location-icon-png-green-home-shanti-bangalore-counseling.png',
+                city: 'New York',
+                street: '751 Harrison Ave',
+            },
+        ],
+        locationInfo: [
+            {
+                title: 'Distance',
+                data: '10.1 km',
+            },
+            {
+                title: 'Time',
+                data: '30 min',
+            },
+            {
+                title: 'Price',
+                data: '$12.80',
+            },
+            {
+                title: 'Energy',
+                data: '8.3 kWh',
+            },
         ],
     },
 };

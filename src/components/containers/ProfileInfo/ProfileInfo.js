@@ -1,27 +1,31 @@
 import React from 'react';
 import './ProfileInfo.css';
 
-const ProfileInfo = ({ data }) => {
+const ProfileInfo = ({ data, hideInfo }) => {
     const { profile, profileDetails, image } = data;
-
+    console.log(hideInfo);
     return (
         <div>
             <div className='avatar'>
                 <img src={image} alt={profile[0].name} />
                 {profile.map(elm => {
                     return (
-                        <div className='avatar-details'>
+                        <div className='avatar-details' key={elm.name}>
                             <h4>{elm.name}</h4>
-                            <p>{elm.interactions}</p>
+                            {hideInfo ? (
+                                <p>**********</p>
+                            ) : (
+                                <p>{elm.interactions}</p>
+                            )}
                         </div>
                     );
                 })}
             </div>
             {profileDetails.map(elm => {
                 return (
-                    <div className='profile-details'>
+                    <div className='profile-details' key={elm.title}>
                         <h4>{elm.title}</h4>
-                        <p>{elm.data}</p>
+                        {hideInfo ? <p>**********</p> : <p>{elm.data}</p>}
                     </div>
                 );
             })}

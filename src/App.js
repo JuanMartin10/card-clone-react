@@ -4,12 +4,12 @@ import { data } from './data';
 import './App.css';
 
 function App() {
-    const { nora, john, michael } = data;
+    const { hidden, nora, john, michael } = data;
     return (
         <div className='container'>
-            <Card data={nora} />
-            <Card data={john} />
-            <Card data={michael} />
+            <Card data={nora} hidden={hidden} />
+            {/* <Card data={john} hidden={hidden}/>
+            <Card data={michael} hidden={hidden}/> */}
         </div>
     );
 }

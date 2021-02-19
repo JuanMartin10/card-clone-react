@@ -1,4 +1,20 @@
 export const data = {
+    hidden: {
+        profile: [
+            {
+                name: 'Your name here',
+                interactions: 'Your interactions',
+            },
+        ],
+        image:
+            'https://img2.freepng.es/20180623/iqh/kisspng-computer-icons-avatar-social-media-blog-font-aweso-avatar-icon-5b2e99c40ce333.6524068515297806760528.jpg',
+
+        profileDetails: [
+            { title: 'email', data: '*********' },
+            { title: 'phone', data: '+***-****-****' },
+            { title: 'location', data: '******, **' },
+        ],
+    },
     nora: {
         profile: [
             {
@@ -54,19 +70,23 @@ export const buttons = [
         src:
             'http://www.pngall.com/wp-content/uploads/2016/03/Paypal-Black-Logo-PNG.png',
         alt: 'paypal',
+        url: 'https://www.paypal.com/',
     },
     {
         src: 'https://logodix.com/logo/1153467.png',
         alt: 'visa',
+        url: 'https://www.visa.es/',
     },
     {
         src:
             'https://www.pikpng.com/pngl/b/208-2087508_mastercard-logo-png-mastercard-logo-black-transparent-clipart.png',
         alt: 'mastercard',
+        url: 'https://www.mastercard.es/',
     },
     {
         src:
             'https://www.pikpng.com/pngl/b/359-3596858_free-png-apple-pay-logo-png-png-images.png',
         alt: 'apple-pay',
+        url: 'https://www.apple.com/es/apple-pay/',
     },
 ];

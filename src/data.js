@@ -20,12 +20,14 @@ export const data = {
                     'https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes-3/3/36-512.png',
                 city: 'Jackson Heights',
                 street: '37-27 74th Street',
+                alt: 'check',
             },
             {
                 icon:
                     'https://www.pngfind.com/pngs/m/122-1227257_location-icon-png-green-home-shanti-bangalore-counseling.png',
                 city: 'Greenpoint',
                 street: '81 Gate St Brooklyn',
+                alt: 'destination',
             },
         ],
         locationInfo: [

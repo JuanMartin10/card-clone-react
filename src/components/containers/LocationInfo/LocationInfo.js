@@ -10,9 +10,9 @@ const LocationInfo = ({ data, hideInfo }) => {
             <div className='up-div'>
                 {streetInfo.map(elm => {
                     return (
-                        <div>
+                        <div key={elm.alt}>
                             <div>
-                                <img src={elm.icon} />
+                                <img src={elm.icon} alt={elm.alt} />
                             </div>
                             <div>
                                 {hideInfo ? (
@@ -32,9 +32,9 @@ const LocationInfo = ({ data, hideInfo }) => {
             </div>
             <hr></hr>
             <div className='down-div'>
-                {locationInfo.map(elm => {
+                {locationInfo.map((elm, idx) => {
                     return (
-                        <div className='grid-item'>
+                        <div className='grid-item' key={idx}>
                             {hideInfo ? <p>***</p> : <p>{elm.data}</p>}
                             <h4>{elm.title}</h4>
                         </div>
